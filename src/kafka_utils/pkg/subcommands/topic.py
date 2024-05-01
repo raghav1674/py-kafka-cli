@@ -1,5 +1,5 @@
-from pkg.kafka.topic import TopicManager
-from pkg.kafka.consumer_group import ConsumerGroupManager
+from kafka_utils.pkg.kafka.topic import TopicManager
+from kafka_utils.pkg.kafka.consumer_group import ConsumerGroupManager
 
 
 def list_unused(args,client):

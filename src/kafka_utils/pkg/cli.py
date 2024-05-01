@@ -5,8 +5,8 @@ import os
 
 from confluent_kafka.admin import AdminClient
 
-from pkg import subcommand
-from pkg.utils.cli_utils import load_profile_from_config
+from kafka_utils.pkg import subcommand
+from kafka_utils.pkg.utils.cli_utils import load_profile_from_config
 
 
 

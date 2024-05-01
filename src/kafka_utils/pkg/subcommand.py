@@ -2,8 +2,8 @@
 # also specify the function to be called defined in the corresponding
 # utils module
 from argparse import ArgumentParser
-from pkg import flags
-from pkg.subcommands import topic
+from kafka_utils.pkg import flags
+from kafka_utils.pkg.subcommands import topic
 
 def topic_subcommands(parser: ArgumentParser):
 

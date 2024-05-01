@@ -1,4 +1,4 @@
-from pkg import cli
+from kafka_utils.pkg import cli
 
 
 def main():
