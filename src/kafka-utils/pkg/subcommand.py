@@ -4,6 +4,7 @@
 from argparse import ArgumentParser
 from pkg import flags
 from pkg.subcommands import topic
+from pkg.subcommands import consumer_group as cg
 
 def topic_subcommands(parser: ArgumentParser):
 
@@ -11,5 +12,10 @@ def topic_subcommands(parser: ArgumentParser):
     
     unsed_parser = subparsers.add_parser("list-unused")
     flags.unused_topic_flags(unsed_parser,topic.list_unused)
+    
+def cg_subcommands(parser: ArgumentParser):
 
-
+    subparsers = parser.add_subparsers()
+    
+    list_parser = subparsers.add_parser("list")
+    flags.list_cg_flags(list_parser,cg.list)

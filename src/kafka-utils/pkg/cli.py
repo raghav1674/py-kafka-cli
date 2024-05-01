@@ -20,6 +20,9 @@ def init_cli():
     topic_parser = subparsers.add_parser("topic",add_help=True)
     subcommand.topic_subcommands(topic_parser)
 
+    cg_parser = subparsers.add_parser("cg",add_help=True)
+    subcommand.cg_subcommands(cg_parser)
+
     args = parser.parse_args()
 
     # create a kafka client based on a profile, which will be passed to the func
