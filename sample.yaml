@@ -1,0 +1,16 @@
+# https://github.com/confluentinc/confluent-kafka-python/blob/master/examples/adminapi.py
+# configuration - https://github.com/confluentinc/librdkafka/blob/master/CONFIGURATION.md
+default:
+  "bootstrap.servers": "192.168.56.132:9092"
+dev:
+  "bootstrap.servers": "192.168.56.131:9092"
+  # "security.protocol": "SASL_SSL"
+  # "sasl.mechanisms": "PLAIN"
+  # "sasl.username": "<CLUSTER_API_KEY>"
+  # "sasl.password": "<CLUSTER_API_SECRET>"
+qa:
+  "bootstrap.servers": "<bootstrap-server-endpoint>"
+  "security.protocol": "SASL_SSL"
+  "sasl.mechanisms": "PLAIN"
+  "sasl.username": "<CLUSTER_API_KEY>"
+  "sasl.password": "<CLUSTER_API_SECRET>"
